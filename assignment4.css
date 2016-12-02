@@ -96,3 +96,12 @@ input:-moz-placeholder {
   line-height: 45px;
   text-align: center;
 }
+
+#results {
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#results:hover {
+  color: #333;
+}
