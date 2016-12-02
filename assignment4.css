@@ -97,11 +97,16 @@ input:-moz-placeholder {
   text-align: center;
 }
 
-#results {
-  color: #888;
+ul {
+  list-style: none;
   font-family: 'Helvetica', sans-serif;
 }
+ul > li > a {
+  text-decoration: none;
+  color: #888;
+}
 
-#results:hover {
+ul > li > a:hover {
+  text-decoration: none;
   color: #333;
 }

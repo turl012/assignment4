@@ -38,7 +38,7 @@ $('#searchBox').keyup(function() {
       $.each(data.data, function(index, column) {
         $.each(column, function(index2, value) {
           if(value.substring(0, query.length).toLowerCase() == query.toLowerCase()) {
-            listOut += value
+            listOut += '<li> <a target="_blank" href="https://www.bing.com/#q=' + value + '">' + value + '</a></li>';
           }
         });
       });
@@ -49,7 +49,7 @@ $('#searchBox').keyup(function() {
         success: function(data) {
           $.each(data.data, function(index3, value2) {
             if(value2.substring(0, query.length).toLowerCase() == query.toLowerCase()) {
-              listOut += value2;
+              listOut += '<li> <a target="_blank" href="https://www.bing.com/#q=' + value2 + '">' + value2 + '</a></li>';
             }
           });
 
